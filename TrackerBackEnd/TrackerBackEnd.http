@@ -1,0 +1,25 @@
+@TrackerBackEnd_HostAddress = http://localhost:5187
+
+GET {{TrackerBackEnd_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{TrackerBackEnd_HostAddress}}/api/Activities
+Content-Type: application/json
+
+{
+  "activities": [
+    {
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "employeeId": "EMP123",
+      "machineId": "MAC-M3-PRO",
+      "appName": "Visual Studio Code",
+      "windowTitle": "ActivitiesController.cs - TrackerBackEnd",
+      "startTimeUtc": "2026-06-22T10:21:34Z",
+      "endTimeUtc": "2026-06-22T10:21:49Z",
+      "durationSeconds": 15
+    }
+  ]
+}
+
